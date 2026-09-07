@@ -13,8 +13,7 @@ import {
   FaPlusCircle,
 } from "react-icons/fa";
 
-import { signOut } from "firebase/auth";
-import { auth } from "../firebase";
+
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 
@@ -56,8 +55,8 @@ function Dashboard() {
   }, []);
 
   // Logout
-  const handleLogout = async () => {
-    await signOut(auth);
+  const handleLogout = () => {
+    localStorage.removeItem("user");
     navigate("/login");
   };
 
