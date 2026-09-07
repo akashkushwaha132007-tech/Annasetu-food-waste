@@ -1,0 +1,69 @@
+.analytics{
+    padding:40px;
+    background:#f5fff7;
+    min-height:100vh;
+}
+
+.analytics h1{
+    text-align:center;
+    color:#16a34a;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    margin-top:30px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    padding:25px;
+    text-align:center;
+    box-shadow:0 8px 18px rgba(0,0,0,.12);
+}
+
+.card h2{
+    color:#16a34a;
+}
+
+.progress-box{
+    background:white;
+    padding:25px;
+    margin-top:30px;
+    border-radius:15px;
+    box-shadow:0 8px 18px rgba(0,0,0,.12);
+}
+
+.progress{
+    width:100%;
+    height:20px;
+    background:#ddd;
+    border-radius:20px;
+    overflow:hidden;
+    margin:20px 0;
+}
+
+.progress-fill{
+    width:78%;
+    height:100%;
+    background:#16a34a;
+}
+
+.report{
+    background:white;
+    margin-top:30px;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 8px 18px rgba(0,0,0,.12);
+}
+
+.report ul{
+    margin-top:15px;
+}
+
+.report li{
+    margin:10px 0;
+}
+
