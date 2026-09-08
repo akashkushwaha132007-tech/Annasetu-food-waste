@@ -20,7 +20,6 @@ function Home() {
       </nav>
 
       {/* Hero Section */}
-
       <section className="hero" id="home">
         <div className="hero-left">
           <h1>Donate Food, Save Lives ❤️</h1>
@@ -30,7 +29,10 @@ function Home() {
             food wastage and fight hunger.
           </p>
 
-          <button className="hero-btn">Donate Now</button>
+          {/* Login page par jayega */}
+          <Link to="/login" className="hero-btn">
+            Donate Now
+          </Link>
         </div>
 
         <div className="hero-right">
@@ -42,9 +44,7 @@ function Home() {
       </section>
 
       {/* Statistics */}
-
       <section className="stats">
-
         <div className="card">
           <h2>1200+</h2>
           <p>Meals Donated</p>
@@ -64,21 +64,17 @@ function Home() {
           <h2>500+</h2>
           <p>Volunteers</p>
         </div>
-
       </section>
 
       {/* Food Cards */}
-
       <section className="foods" id="donate">
-
         <h2>Recent Food Donations</h2>
 
         <div className="food-container">
-
           <div className="food-card">
             <img
               src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=700"
-              alt=""
+              alt="Veg Thali"
             />
             <h3>Veg Thali</h3>
             <p>Quantity : 50 Plates</p>
@@ -88,7 +84,7 @@ function Home() {
           <div className="food-card">
             <img
               src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=700"
-              alt=""
+              alt="Fresh Salad"
             />
             <h3>Fresh Salad</h3>
             <p>Quantity : 30 Boxes</p>
@@ -98,21 +94,17 @@ function Home() {
           <div className="food-card">
             <img
               src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=700"
-              alt=""
+              alt="Mixed Vegetables"
             />
             <h3>Mixed Vegetables</h3>
             <p>Quantity : 20 Kg</p>
             <button>Request Pickup</button>
           </div>
-
         </div>
-
       </section>
 
       {/* About */}
-
       <section className="about" id="about">
-
         <h2>Why AnnaSetu?</h2>
 
         <p>
@@ -120,25 +112,18 @@ function Home() {
           people sleep hungry. AnnaSetu bridges this gap by connecting food
           donors with NGOs and volunteers.
         </p>
-
       </section>
 
       {/* Footer */}
-
       <footer className="footer" id="contact">
-
         <h2>AnnaSetu ❤️</h2>
 
         <p>Donate Food • Reduce Waste • Feed Humanity</p>
 
         <p>© 2026 AnnaSetu. All Rights Reserved.</p>
-
       </footer>
-
     </div>
   );
 }
 
 export default Home;
-
-
